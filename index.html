@@ -5,125 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="index.js"></script>
 </head>
 <body>
-<div>1. Вивести на сторінку в один рядок через кому числа від 10 до 20:</div>
-<div><script>
-    let count = 0;
-    while (count < 20) {
-    count += 1;
-    console.log(count);
-    document.write(count)
-        document.write(",")
-    }</script></div>
+<h4>1. Вивести на сторінку в один рядок через кому числа від 10 до 20:</h4>
+<div>
+    <script>
+        let count = 0;
+        while (count < 20) {
+            count += 1;
+            console.log(count);
+            document.write(count);
+            document.write(",");
+        }</script>
+</div>
 
-<div>2. Вивести квадрати чисел від 10 до 20:</div>
-<div><script>
-    for (let count = 10; count < 21; count += 1) {
-        result = count * count
-        console.log(result)
-        document.write(result)
-        document.write(",")
-    }
-</script></div>
-<div>3. Вивести таблицю множення на 7:</div>
-<div><script>
-    let num = 0;
-    let j = 7
-    for (let i = 1; i <= 10; i+=1) {
-        num = i * j ;
-        document.write(j + "*" + i + "=" + num);
-        console.log(+num)
-        document.write("<br>")
-    }
-</script></div>
-
-<div>4. Знайти суму всіх цілих чисел від 1 до 15:</div>
-<div><script>
-    let sum = 0;
-    for (let count = 0; count <= 15; count += 1) {
-        sum += count
-    }
-    document.write("sum(0...15) =" + sum);
-    console.log(sum)
-</script></div>
-
-<div>5. Знайти добуток усіх цілих чисел від 15 до 35:</div>
-<div><script>
-    let sum_1 = 0;
-    for (let count = 15; count <= 35; count += 1) {
-        sum_1 += count
-    }
-    document.write("sum(15...35) =" + sum_1);
-    console.log(sum_1)
-</script></div>
-
-<div>6.Знайти середнє арифметичне всіх цілих чисел від 1 до 500:</div>
-<div><script>
-    let sum_2 = 0;
-    for (let count = 0; count <= 500; count += 1) {
-        sum_2 += count
-        result = sum_2 / 500
-    }
-    document.write("sum((1.+.+.500)/500) =" + result);
-    console.log(+result)
-</script></div>
-
-<div>7. Вивести суму лише парних чисел в діапазоні від 30 до 80: </div>
-<div><script>
-    let sum_3 = 0;
-    for (let count = 30; count <= 80; count += 1) {
-        if (!(count % 2)) {
-            sum_3 += count
+<h4>2. Вивести квадрати чисел від 10 до 20:</h4>
+<div>
+    <script>
+        for (let count = 10; count < 21; count += 1) {
+            result = count * count;
+            console.log(result);
+            document.write(result);
+            document.write(",");
         }
-    }
-    document.write("sum(30...80) =" + sum_3);
-    console.log(sum_3)
-</script></div>
+    </script>
+</div>
+<h4>3. Вивести таблицю множення на 7:</h4>
+<div>
+    <script>
+        let num = 0;
+        let j = 7
+        for (let i = 1; i <= 10; i += 1) {
+            num = i * j;
+            document.write(j + "*" + i + "=" + num +";");
+            console.log(+num);
 
-<div>8. Вивести всі числа в діапазоні від 100 до 200 кратні 3:</div>
-<div><script>
-    let sum_5 = 0;
-    for (let count = 100; count <= 200; count += 1) {
-        if (!(count % 3)) {
-            document.write(+count)
-            console.log(count)
-            document.write(";"+ " ")
+            document.write("<br>");
         }
+    </script>
+</div>
 
-    }
-</script></div>
-
-<div>9.Дано натуральне число. Знайти та вивести на сторінку всі його дільники:</div>
-<div><script>
-
-</script></div>
-
-<div>10. Визначити кількість його парних дільників:</div>
-<div><script>
-
-</script></div>
-
-<div>11. Знайти суму його парних дільників</div>
-<div><script>
-
-</script></div>
-
-<div>12. Надрукувати повну таблицю множення від 1 до 10:</div>
-<div><script>
-    let num_1 = 0;
-    for (let i = 1; i <= 10; i+=1) {
-        for (let  j = 1; j <= 10; j+=1) {
-            num_1 = i * j;
-            document.write(j + "*" + i + "=" + num_1);
-            console.log(+num_1)
-            document.write("; "+" "+" ")
+<h4>4. Знайти суму всіх цілих чисел від 1 до 15:</h4>
+<div>
+    <script>
+        let sum = 0;
+        for (let count = 0; count <= 15; count += 1) {
+            sum += count
         }
-        document.write("<br>")
-    }
+        document.write(sum);
+        console.log(sum);
+    </script>
+</div>
 
+<h4>5. Знайти добуток усіх цілих чисел від 15 до 35:</h4>
+<div>
+    <script>
+        let mult = 1;
+        for (let count = 15; count <= 35; count += 1) {
+            mult = mult * count
+        }
+        document.write(mult);
+        console.log(mult)
+    </script>
+</div>
 
+<h4>6.Знайти середнє арифметичне всіх цілих чисел від 1 до 500:</h4>
+<div>
+    <script>
+        let average = 0;
+        for (let count = 0; count <= 500; count += 1) {
+            average += count
+            result = average / 500
+        }
+        document.write(result);
+        console.log(+result)
+    </script>
+</div>
 
-</script></div>
+<h4>7. Вивести суму лише парних чисел в діапазоні від 30 до 80:</h4>
+<div>
+    <script>
+        let even = 0;
+        for (let count = 30; count <= 80; count += 1) {
+            if (!(count % 2)) {
+                even += count
+            }
+        }
+        document.write(even);
+        console.log(even)
+    </script>
+</div>
+
+<h4>8. Вивести всі числа в діапазоні від 100 до 200 кратні 3:</h4>
+<div>
+    <script>
+        let number = 0;
+        for (let count = 100; count <= 200; count += 1) {
+            if (!(count % 3)) {
+                document.write(count)
+                console.log(count)
+                document.write(";" + " ")
+            }
+        }
+    </script>
+</div>
+
+<h4>9.Дано натуральне число. Знайти та вивести на сторінку всі його дільники:</h4>
+<div>
+    <script>
+        let number_1 = 10;
+        for (let i = 10; i >= 0; i--) {
+            let diff = number_1 / i;
+            if (diff % 1 === 0) {
+                console.log(diff);
+                document.write(diff);
+                document.write(";" + " ");
+            }
+        }
+    </script>
+</div>
+
+<h4>10. Визначити кількість його парних дільників:</h4>
+<div>
+    <script>
+        let number_2 = 10;
+
+        for (let i = 10; i >= 0; i--) {
+            let diff = number_2 / i;
+
+            if (diff % 2 === 0) {
+                console.log(diff);
+                document.write(diff);
+                document.write(";" + " ");
+            }
+        }
+    </script>
+</div>
+
+<h4>11. Знайти суму його парних дільників</h4>
+<div>
+    <script>
+        let number_3 = 10;
+        let amount = 0;
+
+        for (let i = 10; i >= 0; i--) {
+            let diff = number_3 / i;
+
+            if (diff % 2 === 0) {
+                amount += diff;
+                console.log(diff);
+            }
+        }
+        console.log(amount);
+        document.write(amount)
+
+    </script>
+</div>
+
+<h4>12. Надрукувати повну таблицю множення від 1 до 10:</h4>
+<div>
+    <script>
+        let num_1 = 0;
+        for (let i = 1; i <= 10; i += 1) {
+            for (let j = 1; j <= 10; j += 1) {
+                num_1 = i * j;
+                if (num_1 < 10) {
+                    num_1 = '0' + num_1;
+                }
+                document.write(num_1);
+                console.log(+num_1);
+                document.write(" ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</div>
+
 </body>
 </html>
